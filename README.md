@@ -14,6 +14,8 @@ Data Structures and Algorithms
 
 * [Bucket Sort Nedir ve Nasıl Çalışır](#Bucket-Sort-Nedir-ve-Nasıl-Çalışır)
 * [JAVA ile Algoritma İmplementasyonu](#JAVA-ile-Algoritma-İmplementasyonu)
+* [Test Senaryoları](#Test-Senaryoları)
+* [Karmaşıklık Analizi](#Karmaşıklık-Analizi)
 
 ### Bucket Sort Nedir ve Nasıl Çalışır ###
 
