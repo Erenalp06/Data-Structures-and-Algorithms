@@ -64,7 +64,7 @@ Boş olmayan bütün kovalar kendi içinde sıralanır. Burada kovalardaki elema
 
 
 
- ### JAVA ile Algoritma İmplementasyonu ###
+ ### JAVA ile Algoritma Implementasyonu ###
 
  ```java
 import java.util.ArrayList;
