@@ -19,9 +19,16 @@ Kova sıralaması adımları şunlardır (Input olarak float dizisi varsayılmı
 
 1. Başlangıçta boş olan pozitif veya negatif sayılara göre iki adet **"kovalar"** dizisi oluşturulur.
 2. Asıl dizinin üzerinden geçerek her bir elemanın **"kovalar"** dizilerinde yerleştirileceği indisler hesaplanır.
-   * Dizinin her bir elemanı ile **(arr[i])** dizinin boyutu **(n)** çarpılarak yerleşeceği indis numarası hesaplanır.
-   * Örnek olarak: arr[i] = 0.32, n = 7 olsun. **indis = arr[i] * n = 0.32 * 7 = 2.24 = 2** (0.32 > 0 olduğu için pozitif **"kovalar"** dizisinin **"2."** indisine yerleştirilir)
-3. Boş olmayan bütün kovalar kendi içinde sıralanır (negatif sıralama reverse yapılmalıdır).
+   * Dizinin her bir elemanından **(arr[i])** minimum değer **(min)** çıkartılır ve dizinin boyutunun 1 eksiği ile **(n - 1)** çarpılır, bulunan değer **(max - min)** değerine bölünür.
+   * Yukarıda yapılan işlem dizideki sayıların sınırlı sayıdaki kovalara yerleştirilmesini sağlar, aksi taktirde büyük sayılarda **IndexOutOfBound** hatası verecektir.
+   * Örnek olarak:
+       * arr[0] = 3.2, n = 6, max = 3.2, min = -4.8 kabul edelim
+       * **indis = (arr[0] - min) * (arr.length - 1) / (max - min) = (3.2 - (-4.8)) * (6 - 1) / (3.2 - (-4.8)) = 5** (3.2 > 0 olduğu için pozitif **"kovalar"** dizisinin **"5."** indisine yerleştirilir)
+3. Boş olmayan bütün kovalar kendi içinde sıralanır.
 4. Boş olmayan kovalardaki bütün öğeler yeniden diziye yerleştirilir (Önce negatif kovalardakiler daha sonra pozitif kovalardakiler yerleştirilir).
+
+ 
+
+
 
 
