@@ -13,7 +13,7 @@ Data Structures and Algorithms
 ### 1. Bucket Sort Algoritması
 
 * [Bucket Sort Nedir ve Nasıl Çalışır](#bucket-sort-nedir-ve-nasıl-çalışır)
-* [JAVA ile Algoritma İmplementasyonu](#java-ile-algoritma-implementasyonu)
+* [JAVA ile Algoritma Implementasyonu](#java-ile-algoritma-implementasyonu)
 * [Test Senaryoları](#test-senaryoları)
 * [Karmaşıklık Analizi](#karmaşıklık-analizi)
 
