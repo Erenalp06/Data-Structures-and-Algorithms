@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 
 public class BucketSort {
@@ -9,6 +10,17 @@ public class BucketSort {
             return;
         }
 
+        float max = arr[0];
+        float min = arr[0];
+
+        for (int i = 1; i < arr.length; i++) {
+            if (arr[i] > max) {
+                max = arr[i];
+            } else if (arr[i] < min) {
+                min = arr[i];
+            }
+        }
+
         ArrayList<Float>[] negativeBuckets = new ArrayList[arr.length];
         ArrayList<Float>[] positiveBuckets = new ArrayList[arr.length];
 
@@ -17,23 +29,24 @@ public class BucketSort {
             positiveBuckets[i] = new ArrayList<>();
         }
 
-        for(int i = 0; i < arr.length; i++){
-            if(arr[i] >= 0){
-                int index = (int)(arr[i] * arr.length);
+        for (int i = 0; i < arr.length; i++) {
+            int index;
+            if (arr[i] >= 0) {
+                index = (int) ((arr[i] - min) * (arr.length - 1) / (max - min));
                 positiveBuckets[index].add(arr[i]);
-            }else{
-                int index = (int)(Math.abs((arr[i] * arr.length)));
+            } else {
+                index = (int) Math.abs(((arr[i] - min) * (arr.length - 1) / (max - min)));
                 negativeBuckets[index].add(arr[i]);
             }
         }
 
         for(int i = 0; i < arr.length; i++){
             Collections.sort(positiveBuckets[i]);
-            Collections.sort(negativeBuckets[i], Collections.reverseOrder());
+            Collections.sort(negativeBuckets[i]);
         }
 
         int index = 0;
-        for(int i = arr.length - 1; i >= 0; i--){
+        for(int i = 0; i < arr.length; i++){
             for(int j = 0; j < negativeBuckets[i].size(); j++){
                 arr[index++] = negativeBuckets[i].get(j);
 
@@ -46,4 +59,6 @@ public class BucketSort {
             }
         }
     }
+
+
 }

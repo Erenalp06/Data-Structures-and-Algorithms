@@ -38,11 +38,15 @@ public class Main {
 
         float[] data = {0.43f, 0.32f, 0.23f, 0.52f, 0.25f, 0.47f, 0.51f};
         float[] data1 = {-0.2f, -0.5f, -0.1f, -0.3f, -0.4f};
-        float[] data2 = {0f};
+        float[] data2 = {-0.2f, -1.47f, 6.4f, 2f, -1f};
+        float[] arr = {-4.5f, -2.3f, -7.0f, -1.1f};
+        float[] arr1 = {3.2f, -2.5f, 1.7f, -4.8f, 2.0f, -1.0f};
+        float[] arr2 = {1f, 1.01f, 1f, 1f, 1f, 1f};
+        float[] arr3 = {-10000.0f, -5000.0f, -20000.0f, -15000.0f};
 
-        BucketSort.sort(data2);
+        BucketSort.sort(arr3);
 
-        System.out.println("Sorted data : " + Arrays.toString(data2));
+        System.out.println("Sorted data : " + Arrays.toString(arr3));
 
 
     }

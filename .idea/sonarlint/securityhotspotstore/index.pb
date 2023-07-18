@@ -5,8 +5,6 @@ B
 src/MergeSort.java,8\e\8eda3cbe3989e7f548f3c1fb8d5d850021fd43af
 F
 src/SelectionSort.java,7\0\70184f5bb63ef7d88185f65967dc8213c407c3b9
-E
-src/CountingSort.java,1\c\1c1383e2f7fe721dfcfa4be3c6a2ce3fd0c5bfe4
 B
 src/RadixSort.java,7\7\77c52a0d0a6dc2bf9dd4805f16b2ec203fea1c98
 C
