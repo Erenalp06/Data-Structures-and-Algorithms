@@ -44,9 +44,9 @@ public class Main {
         float[] arr2 = {1f, 1.01f, 1f, 1f, 1f, 1f};
         float[] arr3 = {-10000.0f, -5000.0f, -20000.0f, -15000.0f};
 
-        BucketSort.sort(arr3);
+        BucketSort.sort(arr1);
 
-        System.out.println("Sorted data : " + Arrays.toString(arr3));
+        System.out.println("Sorted data : " + Arrays.toString(arr1));
 
 
     }
