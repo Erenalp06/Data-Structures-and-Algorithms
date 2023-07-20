@@ -205,7 +205,21 @@ Sorted data : [0.5]
 
  ### Karmaşıklık Analizi ###
 
- ...
+**1. Zaman Karmaşıklığı (Time Complexity)**
+
+  * En iyi Durum (Best Case) -> Veri seti düzgün aralıkla dağılmışsa, her aralık sadece bir eleman içerir ve sıralama işlemine ihtiyaç duyulmaz. Bu durumda, aralıkların sayısı n'ye eşit olur ve tüm elemanlar doğrudan yerine yerleştirilir. Bu nedenle, zaman karmaşıklığı O(n) olur, çünkü tüm elemanlar tek geçişte sıralanır.
+
+  * Ortalama Durum (Avarage Case) -> Eğer elemanlar düzensiz bir şekilde aralıklara dağılırsa, yani bazı aralıklar boş kalırken, bazı aralıklar çok sayıda eleman içerebilir. Bu durumda, her bir aralıkta birden fazla eleman bulunur ve bu elemanlar arasındaki sıralama için ekstra sıralama algoritmaları kullanılır. Bu ekstra sıralama işlemi, her bir aralıktaki eleman sayısına bağlı olarak zaman alabilir. Bu nedenle, toplam zaman karmaşıklığı O(n+k) olacaktır. Burada **'k'** aralıkların sayısıdır.
+
+  * En kötü Durum (Worst Case) -> Tüm elemanlar tek bir aralığa düşerse, tüm öğeleri içeren yalnızca tek bir kova oluşacaktır. Bu kovadaki elemanları da Insertion Sort veya Selection sort ile sıralarsak, Insertion Sort'un en kötü durum zaman karmaşıklığı O(n^2) olduğu düşünülürse, toplamda O(n^2) zaman karmaşıklığı olacaktır.
+
+**2. Uzay Karmaşıklığı (Space Complexity)**
+
+  * Yukarıdaki algoritma için, her bir elemanın bir kovaya yerleştirildiği varsayılırsa, kova sayısı, gelen dizi boyutu ile aynı olduğundan uzay karmaşıklığı O(n) olacaktır. Burada **'n'** dizi boyutudur ve kova sayısıdır.
+
+
+
+ 
 
 
 
