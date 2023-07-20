@@ -219,6 +219,9 @@ Sorted data : [0.5]
   * Yukarıdaki algoritma için, her bir elemanın bir kovaya yerleştirildiği varsayılırsa, kova sayısı, gelen dizi boyutu ile aynı olduğundan uzay karmaşıklığı O(n) olacaktır. Burada **'n'** dizi boyutudur ve kova sayısıdır.
 
 
+<br>
+
+
  ### Nerelerde Kullanılır ###
 
  1. Sıralama Algoritmalarının Parçaları Olarak: Özellikle çeşitli sıralama algoritmalarında küçük aralıklara veya alt dizilere bölme işleminde **Kova Sıralaması** kullanılabilir.
