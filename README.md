@@ -16,7 +16,7 @@ Data Structures and Algorithms
 * [JAVA ile Algoritma Implementasyonu](#java-ile-algoritma-implementasyonu)
 * [Test Senaryoları](#test-senaryoları)
 * [Karmaşıklık Analizi](#karmaşıklık-analizi)
-* [Kullanım Alanları](#kullanım-alanları)
+* [Nerelerde Kullanılır](#Nerelerde-Kullanılır)
 
 ### Bucket Sort Nedir ve Nasıl Çalışır ###
 
@@ -219,7 +219,7 @@ Sorted data : [0.5]
   * Yukarıdaki algoritma için, her bir elemanın bir kovaya yerleştirildiği varsayılırsa, kova sayısı, gelen dizi boyutu ile aynı olduğundan uzay karmaşıklığı O(n) olacaktır. Burada **'n'** dizi boyutudur ve kova sayısıdır.
 
 
- ### Kullanım Alanları ###
+ ### Nerelerde Kullanılır ###
 
  1. Sıralama Algoritmalarının Parçaları Olarak: Özellikle çeşitli sıralama algoritmalarında küçük aralıklara veya alt dizilere bölme işleminde **Kova Sıralaması** kullanılabilir.
  2. Histogram Oluşturma: **Kova Sıralaması**, histogram oluşturmak için kullanılabilir. Örneğin, bir resimdeki renk dağılımını analiz etmek veya metin içindeki harflerin frekansını hesaplamak gibi durumlarda kullanılabilir.
