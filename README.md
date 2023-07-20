@@ -224,11 +224,11 @@ Sorted data : [0.5]
 
  ### Nerelerde Kullanılır ###
 
- 1. Sıralama Algoritmalarının Parçaları Olarak: Özellikle çeşitli sıralama algoritmalarında küçük aralıklara veya alt dizilere bölme işleminde **Kova Sıralaması** kullanılabilir.
- 2. Histogram Oluşturma: **Kova Sıralaması**, histogram oluşturmak için kullanılabilir. Örneğin, bir resimdeki renk dağılımını analiz etmek veya metin içindeki harflerin frekansını hesaplamak gibi durumlarda kullanılabilir.
- 3. Nümerik Analiz: Sayısal analiz ve veri bilimi alanında, büyük veri kümesini belli aralıklara bölmek ve bu aralıkların özet istatistiklerini hesaplamak için kullanılabilir.
- 4. Harf Sıralama: Harflerden oluşan bir metni sıralamak için kullanılabilir. Özellikle isim veya kelime listelerini alfabeik sıraya göre düzenlemek için kullanışlıdır.
- 5. Sayıdal Veri Sıralama: Büyük sayısal veri kümesini sıralamak için diğer sıralama algoritmaları gibi Bucket Sort da kullanılabilir.
+ 1. **Sıralama Algoritmalarının Parçaları Olarak:** Özellikle çeşitli sıralama algoritmalarında küçük aralıklara veya alt dizilere bölme işleminde **Kova Sıralaması** kullanılabilir.
+ 2. **Histogram Oluşturma:** **Kova Sıralaması**, histogram oluşturmak için kullanılabilir. Örneğin, bir resimdeki renk dağılımını analiz etmek veya metin içindeki harflerin frekansını hesaplamak gibi durumlarda kullanılabilir.
+ 3. **Nümerik Analiz:** Sayısal analiz ve veri bilimi alanında, büyük veri kümesini belli aralıklara bölmek ve bu aralıkların özet istatistiklerini hesaplamak için kullanılabilir.
+ 4. **Harf Sıralama:** Harflerden oluşan bir metni sıralamak için kullanılabilir. Özellikle isim veya kelime listelerini alfabeik sıraya göre düzenlemek için kullanışlıdır.
+ 5. **Sayıdal Veri Sıralama:** Büyük sayısal veri kümesini sıralamak için diğer sıralama algoritmaları gibi Bucket Sort da kullanılabilir.
 
 
 
