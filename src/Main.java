@@ -36,17 +36,39 @@ public class Main {
 
         System.out.println("Sorted Data : " + Arrays.toString(data));*/
 
-        float[] data = {0.43f, 0.32f, 0.23f, 0.52f, 0.25f, 0.47f, 0.51f};
+        /*float[] data = {0.43f, 0.32f, 0.23f, 0.52f, 0.25f, 0.47f, 0.51f};
         float[] data1 = {-0.2f, -0.5f, -0.1f, -0.3f, -0.4f};
         float[] data2 = {-0.2f, -1.47f, 6.4f, 2f, -1f};
         float[] arr = {-4.5f, -2.3f, -7.0f, -1.1f};
         float[] arr1 = {3.2f, -2.5f, 1.7f, -4.8f, 2.0f, -1.0f};
         float[] arr2 = {1f, 1.01f, 1f, 1f, 1f, 1f};
-        float[] arr3 = {-10000.0f, -5000.0f, -20000.0f, -15000.0f};
+        float[] arr3 = {-10000.0f, -5000.0f, -20000.0f, -15000.0f};*/
 
-        BucketSort.sort(arr1);
+        /*float[] arr = {0.5f};
 
-        System.out.println("Sorted data : " + Arrays.toString(arr1));
+        BucketSort.sort(arr);
+
+        System.out.println("Sorted data : " + Arrays.toString(arr));*/
+
+        int[] testArray1 = {64, 34, 25, 12, 22, 11, 90};
+        System.out.println("Original array: " + Arrays.toString(testArray1));
+        ShellSort.sort(testArray1);
+        System.out.println("Sorted array: " + Arrays.toString(testArray1));
+
+        int[] testArray2 = {9, 8, 7, 6, 5, 4, 3, 2, 1};
+        System.out.println("Original array: " + Arrays.toString(testArray2));
+        ShellSort.sort(testArray2);
+        System.out.println("Sorted array: " + Arrays.toString(testArray2));
+
+        int[] testArray3 = {3, 5, 1, 8, 0, 2, 9, 4, 7, 6};
+        System.out.println("Original array: " + Arrays.toString(testArray3));
+        ShellSort.sort(testArray3);
+        System.out.println("Sorted array: " + Arrays.toString(testArray3));
+
+        int[] testArray = {-3, -5, 1, -8, 0, 2, -9, 4, 7, -6};
+        System.out.println("Original array: " + Arrays.toString(testArray));
+        ShellSort.sort(testArray);
+        System.out.println("Sorted array: " + Arrays.toString(testArray));
 
 
     }

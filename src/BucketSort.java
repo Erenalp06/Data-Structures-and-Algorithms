@@ -1,12 +1,10 @@
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
 
 public class BucketSort {
 
-    static void sort(float[] arr){
-
-        if(arr.length <= 0){
+    static void sort(float[] arr) {
+        if (arr.length <= 0) {
             return;
         }
 
@@ -24,7 +22,7 @@ public class BucketSort {
         ArrayList<Float>[] negativeBuckets = new ArrayList[arr.length];
         ArrayList<Float>[] positiveBuckets = new ArrayList[arr.length];
 
-        for(int i = 0; i < arr.length; i++){
+        for (int i = 0; i < arr.length; i++) {
             negativeBuckets[i] = new ArrayList<>();
             positiveBuckets[i] = new ArrayList<>();
         }
@@ -40,25 +38,23 @@ public class BucketSort {
             }
         }
 
-         for(int i = 0; i < arr.length; i++){
+        for (int i = 0; i < arr.length; i++) {
             Collections.sort(positiveBuckets[i]);
             Collections.sort(negativeBuckets[i]);
         }
 
         int index = 0;
-        for(int i = 0; i < arr.length; i++){
-            for(int j = 0; j < negativeBuckets[i].size(); j++){
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < negativeBuckets[i].size(); j++) {
                 arr[index++] = negativeBuckets[i].get(j);
 
             }
         }
 
-        for(int i = 0; i < arr.length; i++){
-            for(int j = 0; j < positiveBuckets[i].size(); j++){
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < positiveBuckets[i].size(); j++) {
                 arr[index++] = positiveBuckets[i].get(j);
             }
         }
     }
-
-
 }
